@@ -54,7 +54,7 @@ RUN cd /tmp && \
        mock \
        unittest2 \
        pySqsListener \
-       logdna \
+       weakrefset \
        rollbar
 
 # Enable playblasts with Quicktime
@@ -91,7 +91,7 @@ ENV MAYA_DISABLE_CIP=1
 ENV PYTHONHOME=$MAYA_LOCATION
 ENV QT_PLUGIN_PATH=/usr/autodesk/maya2018/bin/../qt-plugins
 ENV LD_LIBRARY_PATH=$MAYA_LOCATION/lib
-RUN mv /usr/local/lib/python2.7/site-packages/* /usr/autodesk/maya2018/lib/python2.7/site-packages
-ENV PYTHONPATH=/usr/autodesk/maya2018/lib/python2.7/site-packages
+#RUN mv /usr/local/lib/python2.7/site-packages/* /usr/autodesk/maya2018/lib/python2.7/site-packages
+ENV PYTHONPATH=/usr/local/lib/python2.7/site-packages:/usr/autodesk/maya2018/lib/
 # Cleanup
 WORKDIR /root
