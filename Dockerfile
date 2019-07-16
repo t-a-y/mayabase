@@ -55,7 +55,8 @@ RUN cd /tmp && \
        unittest2 \
        pySqsListener \
        weakrefset \
-       rollbar
+       rollbar \
+       logdna
 
 # Enable playblasts with Quicktime
 ENV LIBQUICKTIME_PLUGIN_DIR=/usr/autodesk/maya/lib
