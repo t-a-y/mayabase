@@ -92,5 +92,6 @@ ENV PYTHONHOME=$MAYA_LOCATION
 ENV QT_PLUGIN_PATH=/usr/autodesk/maya2018/bin/../qt-plugins
 ENV LD_LIBRARY_PATH=$MAYA_LOCATION/lib
 RUN mv /usr/local/lib/python2.7/site-packages/* /usr/autodesk/maya2018/lib/python2.7/site-packages
+ENV PYTHONPATH=/usr/autodesk/maya2018/lib/python2.7/site-packages
 # Cleanup
 WORKDIR /root
