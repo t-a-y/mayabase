@@ -56,7 +56,8 @@ RUN cd /tmp && \
        pySqsListener \
        weakrefset \
        rollbar \
-       logdna
+       logdna \
+       graphqlclient
 
 # Enable playblasts with Quicktime
 ENV LIBQUICKTIME_PLUGIN_DIR=/usr/autodesk/maya/lib
